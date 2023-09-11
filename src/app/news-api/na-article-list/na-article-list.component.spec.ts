@@ -8,7 +8,7 @@ describe('NaArticleListComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [NaArticleListComponent]
+      declarations: [NaArticleListComponent],
     });
     fixture = TestBed.createComponent(NaArticleListComponent);
     component = fixture.componentInstance;

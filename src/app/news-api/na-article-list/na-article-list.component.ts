@@ -4,16 +4,15 @@ import { NewsApiService, Article } from '../news-api.service';
 @Component({
   selector: 'app-na-article-list',
   templateUrl: './na-article-list.component.html',
-  styleUrls: ['./na-article-list.component.css']
+  styleUrls: ['./na-article-list.component.css'],
 })
-export class NaArticleListComponent implements OnInit{
+export class NaArticleListComponent implements OnInit {
   articles!: Article[];
-  constructor(private newsApiService: NewsApiService){
+  constructor(private newsApiService: NewsApiService) {
     this.newsApiService.pagesOutput.subscribe((articles) => {
       this.articles = articles;
     });
     this.newsApiService.getPage(1);
   }
-  ngOnInit() { }
-
+  ngOnInit() {}
 }

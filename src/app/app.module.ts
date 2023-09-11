@@ -8,17 +8,15 @@ import { NotificationsModule } from './notifications/notifications.module';
 import { NewsApiModule } from './news-api/news-api.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
     WeatherModule,
     NotificationsModule,
-    NewsApiModule
+    NewsApiModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

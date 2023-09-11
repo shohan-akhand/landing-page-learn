@@ -1,18 +1,22 @@
-:host{
-    position: fixed;
-    left: 0;
-    height: 100%;
-    flex-direction: column;
-    justify-content: center;
-    display: flex;
+:host {
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  position: fixed;
+  left: 0;
+  height: 100%;
 }
-.temp, .day {
-    margin: 0;
-    text-align: center;
+.temp,
+.day {
+  margin: 0;
+  text-align: center;
 }
-.temp{
-    font-weight: bold;
+.temp {
+  font-weight: bold;
+  color: maroon;
 }
-.day{
-    font-style: italic;
+.day {
+  font-style: italic;
+  font-weight: bold;
+  color: blue;
 }
